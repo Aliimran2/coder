@@ -1,0 +1,26 @@
+abstract class Animal{
+public abstract void sound();
+    
+}
+class Lion extends Animal{
+    @Override
+    public void sound(){
+        System.out.println("Lion roars.");
+    }
+}
+class Tiger extends Animal{
+    public void sound(){
+        System.out.println("The Tiger growls!");
+    }
+}
+class Main{
+
+	public static void main(String[] args) {
+        Animal l1 = new Lion();
+        l1.sound();
+        Animal t1 = new Tiger();
+        t1.sound();
+	}
+
+}
+//in the abstract class coding I have learnt that to create an object of subclass we use syntax as: supperclass objectName = new subclass();
